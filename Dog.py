@@ -18,12 +18,22 @@ class Dog:
 
 
 
-     def introduce(self) -> None:
+    def introduce(self) -> None:
         """Print an introduction of the dog.   """
         print(f"hi, I´m {self.name}, a {self.age}-year-old {self.breed}.")
 
-        Mr.King = Dog('Mr.King', 'Golden Retriever', 6)
-        Mr.King.introduce()
+
+
+
+    
+if __name__ == "__main__":
+    mr_king = Dog("Mr. King", "Golden Retriever", 6)
+    benji = Dog("Benji", "Beagle", 3)
+
+    mr_king.introduce()
+    benji.introduce()
+    mr_king.sit()
+    benji.roll_over()
 
 
 
